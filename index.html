@@ -4,19 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
     <title>차윤경 (YoonKyung Cha) · Honeywell Key Initiatives Lead</title>
-    <meta name="description" content="차윤경 (YoonKyung Cha) — 하니웰(Honeywell) 이사. AI Transformation(AX) 및 자율화(Autonomous) 비즈니스 리더, Mission Critical 시설 전문, AI Native 융합 전문가의 공식 프로필 및 링크.">
+    <meta name="description" content="AI Transformation(AX) 및 자율화(Autonomous) 비즈니스 리더로서 데이터센터 및 미션 크리티컬 인프라의 미래 기술 융합을 연구·실행합니다.">
     <meta name="theme-color" content="#002f6c" media="(prefers-color-scheme: light)">
     <meta name="theme-color" content="#06080a" media="(prefers-color-scheme: dark)">
     
     <meta property="og:type" content="profile">
     <meta property="og:site_name" content="차윤경 (YoonKyung Cha)">
     <meta property="og:title" content="차윤경 (YoonKyung Cha) — Honeywell Key Initiatives Lead / 이사">
-    <meta property="og:description" content="AI Transformation(AX) 및 자율화(Autonomous) 비즈니스 리더. 전문 지식 아카이브 및 프로페셔널 링크.">
+    <meta property="og:description" content="AI Transformation(AX) 및 자율화(Autonomous) 비즈니스 리더로서 데이터센터 및 미션 크리티컬 인프라의 미래 기술 융합을 연구·실행합니다.">
     <meta property="og:url" content="https://ykcha.com">
     <meta property="og:locale" content="ko_KR">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="차윤경 (YoonKyung Cha) — Honeywell 이사">
-    <meta name="twitter:description" content="AI Transformation(AX) 및 자율화(Autonomous) 비즈니스 리더. 공식 연락처 및 소셜 네트워크 모음.">
+    <meta name="twitter:description" content="AI Transformation(AX) 및 자율화(Autonomous) 비즈니스 리더로서 데이터센터 및 미션 크리티컬 인프라의 미래 기술 융합을 연구·실행합니다.">
 
     <script>
         (function () {
@@ -33,31 +33,22 @@
     {
       "@context": "https://schema.org",
       "@type": "Person",
-      "name": "차윤경",
-      "alternateName": "YoonKyung (Victor) Cha",
+      "name": "Yoonkyung Cha",
+      "alternateName": "차윤경",
       "jobTitle": "Key Initiatives Lead / Director",
-      "worksFor": {
-        "@type": "Organization",
-        "name": "Honeywell"
-      },
-      "alumniOf": {
-        "@type": "EducationalOrganization",
-        "name": "Sogang University",
-        "sameAs": "https://en.wikipedia.org/wiki/Sogang_University"
-      },
-      "knowsAbout": [
-        "Autonomous Systems",
-        "AI Transformation",
-        "AX Business Leadership",
-        "Mission Critical Facilities",
-        "Datacenter Infrastructure",
-        "Disaster Management"
-      ],
+      "worksFor": { "@type": "Organization", "name": "Honeywell" },
+      "alumniOf": { "@type": "CollegeOrUniversity", "name": "Sogang University" },
       "url": "https://ykcha.com",
       "sameAs": [
-        "https://blog.ykcha.com",
-        "https://linkedin.com/in/yoonkyungcha"
-      ]
+        "https://www.linkedin.com/in/yoonkyungcha",
+        "https://blog.ykcha.com"
+      ],
+      "knowsAbout": [
+        "Cloud & AI Infrastructure", "Mission Critical Facilities",
+        "Autonomous Operations", "AI Transformation",
+        "Go-to-Market Strategy", "Sustainability"
+      ],
+      "description": "Business and technology leader specializing in mission-critical facilities, AI infrastructure, and autonomous operations."
     }
     </script>
 
@@ -226,29 +217,38 @@
         }
 
         .stats-bar {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            padding: 16px 28px;
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            align-items: start;
+            padding: 16px 20px;
             background: var(--bg-subtle);
             border-bottom: 1px solid var(--border);
+            gap: 8px;
+            text-align: center;
+        }
+        @media (max-width: 480px) {
+            .stats-bar {
+                grid-template-columns: repeat(3, 1fr);
+                gap: 12px 8px;
+            }
         }
         .stat-item {
             display: flex;
             flex-direction: column;
         }
         .stat-val {
-            font-size: 20px;
+            font-size: 16px;
             font-weight: 800;
             color: var(--accent);
         }
         .stat-lbl {
-            font-size: 11px;
+            font-size: 10px;
             color: var(--fg-subtle);
             font-weight: 700;
             text-transform: uppercase;
-            letter-spacing: 0.05em;
-            margin-top: 2px;
+            letter-spacing: 0.02em;
+            margin-top: 4px;
+            line-height: 1.3;
         }
 
         .content {
@@ -278,6 +278,27 @@
             letter-spacing: 0.08em;
             color: var(--fg-subtle);
             margin-bottom: 12px;
+            border-bottom: 1px solid var(--border);
+            padding-bottom: 6px;
+        }
+
+        .bio-section {
+            margin-bottom: 32px;
+        }
+        .bio-section-body {
+            font-size: 14px;
+            line-height: 1.65;
+            color: var(--fg-muted);
+            word-break: keep-all;
+        }
+        .bio-list {
+            font-size: 14px;
+            line-height: 1.65;
+            color: var(--fg-muted);
+            padding-left: 18px;
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
         }
 
         .links-group {
@@ -376,8 +397,17 @@
             border-color: var(--border-strong);
         }
 
+        .publishing-context {
+            margin-top: 40px;
+            padding-top: 16px;
+            border-top: 1px dashed var(--border);
+            font-size: 12px;
+            line-height: 1.6;
+            color: var(--fg-subtle);
+        }
+
         .footer {
-            margin-top: 48px;
+            margin-top: 32px;
             text-align: center;
             font-size: 12px;
             color: var(--fg-subtle);
@@ -405,39 +435,124 @@
                     </button>
                 </div>
                 <div class="hero-lockup">
-                    <h1 class="hero-title" data-ko="차윤경" data-en="YoonKyung (Victor) Cha">차윤경</h1>
+                    <h1 class="hero-title" data-ko="차윤경" data-en="Yoonkyung Cha">차윤경</h1>
                     <div class="hero-subtitle" data-ko="Honeywell Key Initiatives Lead / 이사" data-en="Honeywell Key Initiatives Lead / Director">Honeywell Key Initiatives Lead / 이사</div>
                     <div class="hero-desc" 
-                         data-ko="자율화(Autonomous) 및 AI Transformation(AX) 비즈니스 리더로서 데이터센터 및 중요 인프라 시설의 미래 기술 융합을 연구하고 실행합니다." 
-                         data-en="Business leader specialized in Automation, Autonomous Systems, and AI Transformation (AX) for Mission Critical Facilities (Datacenters & Premium Commercials).">
-                         자율화(Autonomous) 및 AI Transformation(AX) 비즈니스 리더로서 데이터센터 및 중요 인프라 시설의 미래 기술 융합을 연구하고 실행합니다.
+                         data-ko="기계가 일하고, 인간이 신뢰를 만든다. 글로벌 자동화 기업 임원이자 연구자의 미션 크리티컬 자율화(Autonomous) 및 AI Transformation(AX) 비망록." 
+                         data-en="Machines work, humans build trust. A pracademic archive on mission-critical autonomous operations and AI Transformation (AX) by a global automation executive & researcher.">
+                         기계가 일하고, 인간이 신뢰를 만든다. 글로벌 자동화 기업 임원이자 연구자의 미션 크리티컬 자율화(Autonomous) 및 AI Transformation(AX) 비망록.
                     </div>
                 </div>
             </section>
 
             <section class="stats-bar">
                 <div class="stat-item">
-                    <span class="stat-val" id="statGrad">2026</span>
-                    <span class="stat-lbl" data-ko="ProMBA 서강대" data-en="Sogang ProMBA">ProMBA 서강대</span>
+                    <span class="stat-val">25+</span>
+                    <span class="stat-lbl" data-ko="경력 연차" data-en="Industry Exp.">경력 연차</span>
                 </div>
                 <div class="stat-item">
-                    <span class="stat-val">CDCS</span>
-                    <span class="stat-lbl" data-ko="데이터센터 전문가" data-en="DC Specialist">데이터센터 전문가</span>
+                    <span class="stat-val">15+</span>
+                    <span class="stat-lbl" data-ko="하니웰 재직" data-en="At Honeywell">하니웰 재직</span>
                 </div>
                 <div class="stat-item">
-                    <span class="stat-val" data-ko="재난관리" data-en="Disaster Mgmt">재난관리</span>
-                    <span class="stat-lbl" data-ko="기업재난관리사" data-en="Govt Certified">기업재난관리사</span>
+                    <span class="stat-val">3</span>
+                    <span class="stat-lbl" data-ko="학술 논문" data-en="Papers (SAREK/KGBC)">학술 논문</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-val">KMEA</span>
+                    <span class="stat-lbl" data-ko="기술사회 위원" data-en="Committee Member">기술사회 위원</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-val">4.25</span>
+                    <span class="stat-lbl" data-ko="MBA 평점" data-en="MBA CGPA">MBA 평점</span>
                 </div>
             </section>
 
             <div class="content">
                 <div class="bio-tags">
-                    <span class="bio-tag">#Automation</span>
-                    <span class="bio-tag">#Autonomous</span>
-                    <span class="bio-tag">#AI_Transformation</span>
-                    <span class="bio-tag">#Mission_Critical</span>
-                    <span class="bio-tag">#Datacenter</span>
+                    <span class="bio-tag">#MissionCritical</span>
+                    <span class="bio-tag">#AutonomousOps</span>
+                    <span class="bio-tag">#HITL</span>
+                    <span class="bio-tag">#AITransformation</span>
+                    <span class="bio-tag">#Sustainability</span>
                 </div>
+
+                <section class="bio-section">
+                    <h2 class="section-title" data-ko="Executive Profile" data-en="Executive Profile">Executive Profile</h2>
+                    <p class="bio-section-body"
+                       data-ko="25년 이상 정보통신기술(ICT) 및 건물 자동제어 산업 전반에서 다기능 비즈니스 라인 성장과 Digital/AX Transformation을 이끌어 온 기술 비즈니스 리더(Executive Leader)입니다. 미션 크리티컬 데이터센터 인프라 및 빌딩 관리 시스템의 지능화 플랫폼 구축 전략을 총괄하며, 전통적인 감시 제어 체계를 인공지능 기반의 자율 운영 솔루션으로 고도화하고 있습니다. 산업계의 비즈니스 현장 데이터와 학문적 이론을 유기적으로 연계하여 인류와 기계의 최적 협업 모델(HITL)을 모색합니다."
+                       data-en="A technology business leader (Executive Leader) with over 25 years of experience driving cross-functional business growth and Digital/AX Transformation in the ICT and building automation industries. Directing strategy for intelligent platform deployment in mission-critical datacenter facilities and building management systems, replacing legacy monitoring controls with AI-driven autonomous operation models. Integrating practical field data with academic rigor to advance Human-in-the-Loop (HITL) collaboration.">
+                       25년 이상 정보통신기술(ICT) 및 건물 자동제어 산업 전반에서 다기능 비즈니스 라인 성장과 Digital/AX Transformation을 이끌어 온 기술 비즈니스 리더(Executive Leader)입니다. 미션 크리티컬 데이터센터 인프라 및 빌딩 관리 시스템의 지능화 플랫폼 구축 전략을 총괄하며, 전통적인 감시 제어 체계를 인공지능 기반의 자율 운영 솔루션으로 고도화하고 있습니다. 산업계의 비즈니스 현장 데이터와 학문적 이론을 유기적으로 연계하여 인류와 기계의 최적 협업 모델(HITL)을 모색합니다.
+                    </p>
+                </section>
+
+                <section class="bio-section">
+                    <h2 class="section-title" data-ko="Strategic Focus" data-en="Strategic Focus">Strategic Focus</h2>
+                    <ul class="bio-list">
+                        <li>
+                            <strong data-ko="Mission Critical / Data Center Strategy" data-en="Mission Critical / Data Center Strategy">Mission Critical / Data Center Strategy</strong>: 
+                            <span data-ko="중단 없는 데이터 인프라 Uptime 유지를 보장하는 최적의 자율 냉각 및 전력 에너지 시스템의 융합 전략 설계"
+                                  data-en="Designing system convergence strategies for autonomous cooling and power systems to guarantee continuous data infrastructure uptime.">
+                                  중단 없는 데이터 인프라 Uptime 유지를 보장하는 최적의 자율 냉각 및 전력 에너지 시스템의 융합 전략 설계
+                            </span>
+                        </li>
+                        <li>
+                            <strong data-ko="Cloud/AI-based IBMS & Digital Transformation" data-en="Cloud/AI-based IBMS & Digital Transformation">Cloud/AI-based IBMS & Digital Transformation</strong>: 
+                            <span data-ko="온프레미스 빌딩 감시 제어(BMS)에서 지능형 클라우드 기반 원격 통합 시스템으로의 대전환 실현"
+                                  data-en="Delivering the shift from on-premise building management systems (BMS) to remote, cloud-integrated intelligent operation platforms.">
+                                  온프레미스 빌딩 감시 제어(BMS)에서 지능형 클라우드 기반 원격 통합 시스템으로의 대전환 실현
+                            </span>
+                        </li>
+                        <li>
+                            <strong data-ko="Energy & Sustainability" data-en="Energy & Sustainability">Energy & Sustainability</strong>: 
+                            <span data-ko="탄소 감축 및 탄소 배출 규제 준수를 위한 실시간 탄소량 추적(MRV) 및 에너지 투자 수익률(Energy ROI) 향상 모델 수립"
+                                  data-en="Building real-time measurement, reporting, and verification (MRV) models and energy ROI programs to address carbon emission compliance.">
+                                  탄소 감축 및 탄소 배출 규제 준수를 위한 실시간 탄소량 추적(MRV) 및 에너지 투자 수익률(Energy ROI) 향상 모델 수립
+                            </span>
+                        </li>
+                        <li>
+                            <strong data-ko="Cross-functional Global Program Orchestration" data-en="Cross-functional Global Program Orchestration">Cross-functional Global Program Orchestration</strong>: 
+                            <span data-ko="글로벌 유수 기술 파트너사 및 사내 유관 부서들을 수평적으로 연계하여 복합 솔루션 구축의 시너지를 조율하는 프로그램 관리"
+                                  data-en="Aligning top-tier global technology partners and internal business units to coordinate multi-disciplinary solutions.">
+                                  글로벌 유수 기술 파트너사 및 사내 유관 부서들을 수평적으로 연계하여 복합 솔루션 구축의 시너지를 조율하는 프로그램 관리
+                            </span>
+                        </li>
+                    </ul>
+                </section>
+
+                <section class="bio-section">
+                    <h2 class="section-title" data-ko="Thought Leadership" data-en="Thought Leadership">Thought Leadership</h2>
+                    <div style="font-size: 13px; font-weight: 700; color: var(--fg-muted); margin-bottom: 8px;" data-ko="Key Publications" data-en="Key Publications">Key Publications</div>
+                    <ul class="bio-list">
+                        <li>
+                            <em>Energy optimization control and integrated operation in the smart building</em> (SAREK, 2016)
+                        </li>
+                        <li>
+                            <em>Smart Green Building Technology</em> (Korea Green Building Council, 2014)
+                        </li>
+                        <li>
+                            <em>Building energy solutions via BAS and IT convergence</em> (SAREK, 2011)
+                        </li>
+                    </ul>
+                </section>
+
+                <section class="bio-section">
+                    <h2 class="section-title" data-ko="자격 및 인증" data-en="Credentials">자격 및 인증</h2>
+                    <ul class="bio-list">
+                        <li>
+                            <strong>CDCS</strong> (Certified Data Centre Specialist), 2026
+                        </li>
+                        <li>
+                            <strong>CDCP</strong> (Certified Data Centre Professional), 2023
+                        </li>
+                        <li>
+                            <strong data-ko="Certified Enterprise Disaster Manager" data-en="Certified Enterprise Disaster Manager">Certified Enterprise Disaster Manager</strong> <span data-ko="(기업재난관리사)" data-en="(Govt. Certified)">(기업재난관리사)</span>, 2018
+                        </li>
+                        <li>
+                            <strong>ISO 50001 Internal Auditor</strong> <span data-ko="(에너지경영시스템 심사원)" data-en="(Energy Management System)">(에너지경영시스템 심사원)</span>, 2013
+                        </li>
+                    </ul>
+                </section>
 
                 <h2 class="section-title" data-ko="핵심 프로페셔널 링크" data-en="Professional Links">핵심 프로페셔널 링크</h2>
                 
@@ -453,7 +568,7 @@
                         <span class="link-arrow">→</span>
                     </a>
 
-                    <a href="https://linkedin.com/in/yoonkyungcha" target="_blank" class="link" rel="noopener noreferrer">
+                    <a href="https://www.linkedin.com/in/yoonkyungcha" target="_blank" class="link" rel="noopener noreferrer">
                         <div class="link-left">
                             <span class="link-icon">💼</span>
                             <div class="link-info">
@@ -484,6 +599,14 @@
                         🖨️ <span data-ko="프로필 인쇄" data-en="Print Profile">프로필 인쇄</span>
                     </button>
                 </div>
+
+                <section class="publishing-context">
+                    <p data-ko="본 페이지의 전문 지식 아카이브(📝 링크)는 개인 Obsidian 지식 베이스에 축적된 통찰들을 Quartz 프레임워크 기반으로 자동 빌드하여 발행하는 디지털 가든(Digital Garden) 구조로 설계되어 있습니다. 현장 경험과 학문적 지식이 유기적으로 융합되어 성장하는 여정을 고스란히 공유합니다."
+                       data-en="The knowledge archive linked above (📝) is built on a Digital Garden architecture, utilizing the Quartz framework to automatically generate and publish insights compiled in a personal Obsidian vault. It serves as an evolving space where industry practice and academic study organically merge.">
+                       본 페이지의 전문 지식 아카이브(📝 링크)는 개인 Obsidian 지식 베이스에 축적된 통찰들을 Quartz 프레임워크 기반으로 자동 빌드하여 발행하는 디지털 가든(Digital Garden) 구조로 설계되어 있습니다. 현장 경험과 학문적 지식이 유기적으로 융합되어 성장하는 여정을 고스란히 공유합니다.
+                    </p>
+                    <p style="margin-top: 8px; font-weight: 700; color: var(--fg-muted);" data-ko="2026-07-05 업데이트" data-en="Last updated: 2026-07-05">2026-07-05 업데이트</p>
+                </section>
 
                 <footer class="footer">
                     <p>© <span id="yr">2026</span> YoonKyung Cha. All Rights Reserved.</p>
@@ -555,6 +678,7 @@
 
             function applyLanguage(lang) {
                 currentLang = lang;
+                document.documentElement.lang = (lang === "en") ? "en" : "ko";
                 document.querySelectorAll("[data-ko][data-en]").forEach(function (el) {
                     var text = lang === "en" ? el.getAttribute("data-en") : el.getAttribute("data-ko");
                     if (el.tagName === "INPUT" || el.tagName === "TEXTAREA") {
