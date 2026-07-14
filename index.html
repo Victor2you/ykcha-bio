@@ -3,19 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-    <title>차윤경 (YoonKyung Cha) · Honeywell Key Initiatives Lead</title>
+    <title>차윤경 YoonKyung Cha · Honeywell Key Initiatives Lead</title>
     <meta name="description" content="AI Transformation(AX) 및 자율화(Autonomous) 비즈니스 리더로서 데이터센터 및 미션 크리티컬 인프라의 미래 기술 융합을 연구·실행합니다.">
     <meta name="theme-color" content="#002f6c" media="(prefers-color-scheme: light)">
     <meta name="theme-color" content="#06080a" media="(prefers-color-scheme: dark)">
-    
+    <link rel="icon" type="image/png" href="favicon.png">
+
     <meta property="og:type" content="profile">
-    <meta property="og:site_name" content="차윤경 (YoonKyung Cha)">
-    <meta property="og:title" content="차윤경 (YoonKyung Cha) — Honeywell Key Initiatives Lead / 이사">
+    <meta property="og:site_name" content="차윤경 YoonKyung Cha">
+    <meta property="og:title" content="차윤경 YoonKyung Cha — Honeywell Key Initiatives Lead / 이사 · AX·Autonomous 연구자">
     <meta property="og:description" content="AI Transformation(AX) 및 자율화(Autonomous) 비즈니스 리더로서 데이터센터 및 미션 크리티컬 인프라의 미래 기술 융합을 연구·실행합니다.">
     <meta property="og:url" content="https://ykcha.com">
+    <meta property="og:image" content="https://ykcha.com/profile.jpg">
     <meta property="og:locale" content="ko_KR">
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="차윤경 (YoonKyung Cha) — Honeywell 이사">
+    <meta name="twitter:title" content="차윤경 YoonKyung Cha — Honeywell Key Initiatives Lead / 이사">
     <meta name="twitter:description" content="AI Transformation(AX) 및 자율화(Autonomous) 비즈니스 리더로서 데이터센터 및 미션 크리티컬 인프라의 미래 기술 융합을 연구·실행합니다.">
 
     <script>
@@ -33,12 +35,13 @@
     {
       "@context": "https://schema.org",
       "@type": "Person",
-      "name": "Yoonkyung Cha",
-      "alternateName": "차윤경",
+      "name": "YoonKyung Cha",
+      "alternateName": ["차윤경", "Yoonkyung Cha"],
       "jobTitle": "Key Initiatives Lead / Director",
       "worksFor": { "@type": "Organization", "name": "Honeywell" },
       "alumniOf": { "@type": "CollegeOrUniversity", "name": "Sogang University" },
       "url": "https://ykcha.com",
+      "image": "https://ykcha.com/profile.jpg",
       "sameAs": [
         "https://www.linkedin.com/in/yoonkyungcha",
         "https://blog.ykcha.com"
@@ -196,6 +199,17 @@
             justify-content: flex-end;
         }
 
+        .hero-photo {
+            width: 108px;
+            height: 108px;
+            border-radius: 50%;
+            object-fit: cover;
+            object-position: center 20%;
+            border: 3px solid rgba(255,255,255,.65);
+            box-shadow: 0 12px 32px rgba(0,0,0,.35);
+            margin-bottom: 14px;
+        }
+
         .hero-title {
             font-size: 26px;
             font-weight: 800;
@@ -207,6 +221,25 @@
             font-size: 15px;
             opacity: 0.9;
             font-weight: 500;
+        }
+        .hero-cta {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            margin-top: 16px;
+            padding: 10px 18px;
+            border-radius: 999px;
+            background: rgba(255,255,255,.92);
+            color: var(--brand);
+            font-size: 13px;
+            font-weight: 800;
+            letter-spacing: -0.01em;
+            width: fit-content;
+            transition: transform .18s, box-shadow .18s;
+        }
+        .hero-cta:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 24px rgba(0,0,0,.3);
         }
 
         .stats-bar {
@@ -428,8 +461,12 @@
                     </button>
                 </div>
                 <div class="hero-lockup">
-                    <h1 class="hero-title" data-ko="차윤경" data-en="Yoonkyung Cha">차윤경</h1>
-                    <div class="hero-subtitle" data-ko="Honeywell Key Initiatives Lead / 이사" data-en="Honeywell Key Initiatives Lead / Director">Honeywell Key Initiatives Lead / 이사</div>
+                    <img class="hero-photo" src="profile.jpg" alt="차윤경 YoonKyung Cha 프로필 사진" width="108" height="108">
+                    <h1 class="hero-title" data-ko="차윤경" data-en="YoonKyung Cha">차윤경</h1>
+                    <div class="hero-subtitle" data-ko="Honeywell Key Initiatives Lead / 이사 · AX·Autonomous 연구자" data-en="Honeywell Key Initiatives Lead / Director · AX·Autonomous Researcher">Honeywell Key Initiatives Lead / 이사 · AX·Autonomous 연구자</div>
+                    <a class="hero-cta" href="https://blog.ykcha.com" target="_blank" rel="noopener noreferrer">
+                        <span data-ko="최신 인사이트 읽기" data-en="Read Latest Insights">최신 인사이트 읽기</span> →
+                    </a>
                 </div>
             </section>
 
@@ -459,7 +496,7 @@
             <div class="content">
                 <div class="bio-tags">
                     <span class="bio-tag">#MissionCritical</span>
-                    <span class="bio-tag">#AutonomousOps</span>
+                    <span class="bio-tag">#Autonomous</span>
                     <span class="bio-tag">#HITL</span>
                     <span class="bio-tag">#AITransformation</span>
                     <span class="bio-tag">#Sustainability</span>
@@ -522,6 +559,11 @@
                             <em>Building energy solutions via BAS and IT convergence</em> (SAREK, 2011)
                         </li>
                     </ul>
+                    <div style="font-size: 13px; font-weight: 700; color: var(--fg-muted); margin: 16px 0 8px;" data-ko="Talks & Media" data-en="Talks & Media">Talks &amp; Media</div>
+                    <figure style="margin: 0;">
+                        <img src="seminar.jpg" alt="2026 데이터센터 서밋 코리아 발표 — 차윤경" loading="lazy" style="width: 100%; border-radius: 12px; border: 1px solid var(--border);">
+                        <figcaption style="font-size: 12px; color: var(--fg-subtle); margin-top: 6px;" data-ko="2026 데이터센터 서밋 코리아 발표" data-en="Speaking at Datacenter Summit Korea 2026">2026 데이터센터 서밋 코리아 발표</figcaption>
+                    </figure>
                 </section>
 
                 <section class="bio-section">
@@ -540,6 +582,11 @@
                             <strong>ISO 50001 Internal Auditor</strong> <span data-ko="(에너지경영시스템 심사원)" data-en="(Energy Management System)">(에너지경영시스템 심사원)</span>, 2013
                         </li>
                     </ul>
+                </section>
+
+                <section class="bio-section" id="recentNotes" style="display: none;">
+                    <h2 class="section-title" data-ko="최근 가든 노트" data-en="Recent Garden Notes">최근 가든 노트</h2>
+                    <ul class="bio-list" id="recentNotesList"></ul>
                 </section>
 
                 <h2 class="section-title" data-ko="핵심 프로페셔널 링크" data-en="Professional Links">핵심 프로페셔널 링크</h2>
@@ -685,6 +732,35 @@
 
             document.getElementById("yr").textContent = String(new Date().getFullYear());
             applyLanguage("ko");
+
+            // 최근 가든 노트: blog.ykcha.com RSS에서 최신 3개 자동 표시 (실패 시 섹션 숨김 유지)
+            fetch("https://blog.ykcha.com/index.xml")
+                .then(function (res) { return res.ok ? res.text() : Promise.reject(); })
+                .then(function (xml) {
+                    var doc = new DOMParser().parseFromString(xml, "text/xml");
+                    var items = Array.prototype.slice.call(doc.querySelectorAll("item"), 0, 3);
+                    if (!items.length) return;
+                    var list = document.getElementById("recentNotesList");
+                    items.forEach(function (item) {
+                        var title = item.querySelector("title");
+                        var link = item.querySelector("link");
+                        if (!title || !link) return;
+                        var li = document.createElement("li");
+                        var a = document.createElement("a");
+                        a.href = link.textContent;
+                        a.target = "_blank";
+                        a.rel = "noopener noreferrer";
+                        a.textContent = title.textContent;
+                        a.style.color = "var(--accent)";
+                        a.style.fontWeight = "600";
+                        li.appendChild(a);
+                        list.appendChild(li);
+                    });
+                    if (list.children.length) {
+                        document.getElementById("recentNotes").style.display = "";
+                    }
+                })
+                .catch(function () { /* RSS 불가 시 섹션 비노출 */ });
         })();
     </script>
 </body>
