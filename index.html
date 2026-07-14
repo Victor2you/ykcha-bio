@@ -243,6 +243,28 @@
             box-shadow: 0 8px 24px rgba(0,0,0,.3);
         }
 
+        .media-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 12px 10px;
+        }
+        .media-grid figure { margin: 0; }
+        .media-grid img {
+            width: 100%;
+            aspect-ratio: 4 / 3;
+            object-fit: cover;
+            border-radius: 10px;
+            border: 1px solid var(--border);
+            display: block;
+        }
+        .media-grid figcaption {
+            font-size: 11px;
+            color: var(--fg-subtle);
+            margin-top: 5px;
+            line-height: 1.4;
+            word-break: keep-all;
+        }
+
         .stats-bar {
             display: grid;
             grid-template-columns: repeat(5, 1fr);
@@ -580,10 +602,40 @@
                         </li>
                     </ul>
                     <div style="font-size: 13px; font-weight: 700; color: var(--fg-muted); margin: 16px 0 8px;" data-ko="Talks & Media" data-en="Talks & Media">Talks &amp; Media</div>
-                    <figure style="margin: 0;">
-                        <img src="seminar.jpg" alt="2026 데이터센터 서밋 코리아 발표 — 차윤경" loading="lazy" style="width: 100%; border-radius: 12px; border: 1px solid var(--border);">
-                        <figcaption style="font-size: 12px; color: var(--fg-subtle); margin-top: 6px;" data-ko="2026 데이터센터 서밋 코리아 발표" data-en="Speaking at Datacenter Summit Korea 2026">2026 데이터센터 서밋 코리아 발표</figcaption>
-                    </figure>
+                    <div class="media-grid">
+                        <figure>
+                            <img src="media/media-dcsummit-2026.jpg" alt="2026 데이터센터 서밋 코리아 발표" loading="lazy">
+                            <figcaption data-ko="2026 데이터센터 서밋 코리아 — 기조 발표" data-en="Data Center Summit Korea 2026 — Keynote">2026 데이터센터 서밋 코리아 — 기조 발표</figcaption>
+                        </figure>
+                        <figure>
+                            <img src="media/media-hvac-2026.jpg" alt="HVAC KOREA 2026 컨퍼런스 발표" loading="lazy">
+                            <figcaption data-ko="HVAC KOREA 2026 — Autonomous Control 발표" data-en="HVAC KOREA 2026 — Autonomous Control">HVAC KOREA 2026 — Autonomous Control 발표</figcaption>
+                        </figure>
+                        <figure>
+                            <img src="media/media-kharn10th.jpg" alt="KHARN 창간 10주년 특집" loading="lazy" style="object-position: center 20%;">
+                            <figcaption data-ko="KHARN 창간 10주년 특집 — K-데이터센터 글로벌 허브" data-en="KHARN 10th Anniversary — Korea's DC as Global Hub">KHARN 창간 10주년 특집 — K-데이터센터 글로벌 허브</figcaption>
+                        </figure>
+                        <figure>
+                            <img src="media/media-youtube-kharn.jpg" alt="KHARN 10주년 컨퍼런스 YouTube 발표 영상" loading="lazy">
+                            <figcaption data-ko="YouTube — 데이터센터 구축·운영정책 최적화" data-en="YouTube — Optimizing DC Construction & Operation Policies">YouTube — 데이터센터 구축·운영정책 최적화</figcaption>
+                        </figure>
+                        <figure>
+                            <img src="media/media-dcseminar-2024.jpg" alt="Data Center Sustainability Solution Seminar 발표" loading="lazy">
+                            <figcaption data-ko="DC Sustainability Solution Seminar (2024)" data-en="DC Sustainability Solution Seminar (2024)">DC Sustainability Solution Seminar (2024)</figcaption>
+                        </figure>
+                        <figure>
+                            <img src="media/media-esgforum-2024.jpg" alt="2024 Korea ESG Forum 발표" loading="lazy">
+                            <figcaption data-ko="2024 Korea ESG Forum — 건물 부문 탄소중립" data-en="Korea ESG Forum 2024 — Carbon Neutrality in Buildings">2024 Korea ESG Forum — 건물 부문 탄소중립</figcaption>
+                        </figure>
+                        <figure>
+                            <img src="media/media-hospital-2024.jpg" alt="병원시설 탄소중립 세미나 발표" loading="lazy" style="object-position: center 25%;">
+                            <figcaption data-ko="병원시설 탄소중립 세미나 (2024)" data-en="Eco-friendly Hospital Facilities Seminar (2024)">병원시설 탄소중립 세미나 (2024)</figcaption>
+                        </figure>
+                        <figure>
+                            <img src="media/media-cloudconv-2024.jpg" alt="2024 Korea Cloud and Data Center Convention 패널" loading="lazy">
+                            <figcaption data-ko="2024 Korea Cloud &amp; DC Convention — 클로징 패널" data-en="Korea Cloud &amp; DC Convention 2024 — Closing Panel">2024 Korea Cloud &amp; DC Convention — 클로징 패널</figcaption>
+                        </figure>
+                    </div>
                 </section>
 
                 <section class="bio-section">
