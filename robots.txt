@@ -1,0 +1,41 @@
+# ykcha.com — 차윤경 YoonKyung Cha 공식 프로필 허브
+# All crawlers welcome, including AI/LLM crawlers.
+
+User-agent: *
+Allow: /
+
+# Search & AI crawlers (explicitly allowed)
+User-agent: Googlebot
+Allow: /
+
+User-agent: Yeti
+Allow: /
+
+User-agent: GPTBot
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-User
+Allow: /
+
+User-agent: Claude-SearchBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Perplexity-User
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+Sitemap: https://ykcha.com/sitemap.xml
